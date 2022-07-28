@@ -28,7 +28,7 @@ contract("Pixtogram", ([deployer, author, tipper]) => {
 
   describe("register user", async () => {
     it("should register user", async () => {
-      const result = await pixtogram.registerUser("Stark", { from: author });
+      await pixtogram.registerUser("Stark", { from: author });
       const user = await pixtogram.users(author);
       assert.equal(user.username, "Stark");
       assert.equal(user.imgCount, 0);

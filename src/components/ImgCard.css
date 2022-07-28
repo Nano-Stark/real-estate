@@ -1,0 +1,56 @@
+.imgcard__container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    /* top: 20%; */
+}
+
+.imgcard {
+    width: 50vw;
+    border-radius: 10%;
+    background-color: green;
+    border: 1px solid gray;
+}
+
+.imgcard__button {
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 0.8em;
+}
+
+.imgcard__img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10% 10% 0 0;
+}
+
+.imgcard__desc {
+    padding: 0.5em 0.5em;
+}
+
+.button__container {
+        position: relative;
+}
+
+.imgcard__button {
+    display: block;
+    margin-left: auto;
+    margin-right: 2em;
+    margin-bottom: 1.5em;
+    
+    background-color: yellow;
+}
+
+@media screen and (min-width: 640px) {
+    .imgcard {
+        width: 40vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .imgcard {
+        width: 35vw;
+    }
+}
