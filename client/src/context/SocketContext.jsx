@@ -9,7 +9,7 @@ export const SocketContextProvider = ({ children }) => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    setSocket(io(`${process.env.REACT_SOCKET_URL}`));
+    setSocket(io(`${process.env.REACT_APP_SOCKET_URL}`));
   }, []);
 
   useEffect(() => {
