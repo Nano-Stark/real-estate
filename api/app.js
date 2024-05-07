@@ -66,6 +66,6 @@ io.on("connection", (socket) => {
   });
 });
 
-app.listen(8800, () => {
+app.listen(process.env.PORT, () => {
   console.log("Server is running!");
 });
