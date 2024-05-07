@@ -8,7 +8,7 @@ import userRoute from "./routes/user.route.js";
 import chatRoute from "./routes/chat.route.js";
 import messageRoute from "./routes/message.route.js";
 import { Server } from "socket.io";
-import createServer from "node:http"
+import {createServer} from "node:http"
 
 const app = express();
 const io = new Server(createServer(app), {
